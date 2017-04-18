@@ -1,5 +1,5 @@
 class ArticlesController < ApplicationController
-  before_filter :authorize, only: [:edit, :new]
+  before_filter :authorize, only: [:edit, :update, :create, :new, :destroy]
   before_action :set_article, only: [:show, :edit, :update, :destroy]
 
   # GET /articles
